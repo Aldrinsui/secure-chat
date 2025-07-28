@@ -1,0 +1,9 @@
+{
+  "name": "SecureChat Key Generator",
+  "description": "A secure, client-side cryptographic key generator for end-to-end encrypted communication. Generate and manage your ECDSA key pairs directly in your browser without any server interaction.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "prompt": ""
+}

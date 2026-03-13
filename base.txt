@@ -1,0 +1,34 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+Django==5.0.6
+channels==4.1.0
+channels-redis==4.2.0
+daphne==4.1.2                    # ASGI server (Twisted-based, production-grade)
+
+# ── Database ──────────────────────────────────────────────────────────────────
+psycopg2-binary==2.9.9
+django-redis==5.4.0
+
+# ── REST API ──────────────────────────────────────────────────────────────────
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.4.0
+
+# ── Message queue / async tasks ───────────────────────────────────────────────
+celery==5.4.0
+redis==5.0.7
+
+# ── Observability ─────────────────────────────────────────────────────────────
+sentry-sdk==2.13.0
+django-prometheus==2.3.1
+uvicorn[standard]==0.30.6        # Alternative ASGI server for benchmarking
+
+# ── Push notifications ────────────────────────────────────────────────────────
+firebase-admin==6.5.0            # FCM (Android)
+pyapns2==3.0.1                   # APNs (iOS)
+
+# ── Dev / test ────────────────────────────────────────────────────────────────
+pytest-django==4.8.0
+pytest-asyncio==0.23.8
+channels[daphne]==4.1.0
+factory-boy==3.3.1
+locust==2.31.3                   # Load testing for throughput benchmarks
